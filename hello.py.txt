@@ -1,0 +1,15 @@
+from random import randint
+
+choice=["rock","paper","scissor"]
+player=input(f"choose from{choice}").lower()
+comp=choice[randint(0,2)]
+if player == comp:
+	print(" draw match")
+elif player =="paper" and comp =="rock":
+	print("player 1 wins")
+elif player =="rock" and comp =="scissor":
+	print("player 1 wins")
+elif player =="scissor" and comp =="paper":
+	print("player 1 wins")
+else:
+	print("comp wins")
